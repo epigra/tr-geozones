@@ -1,0 +1,18 @@
+{
+	"name": "epigra/trgeozones",
+	"description": "Adds Turkish Geographical Zones Support to your project including Cities, Districts and Countries in Turkish",
+	"keywords": ["city","country", "district", "database", "il", "ilce", "veritabani", "turkish", "laravel"],
+	"license": "MIT",
+	"require": {},
+	"authors": [
+		{
+			"name": "Uğur Aydoğdu",
+			"email": "ugur.aydogdu@epigra.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Epigra\\TrGeoZones\\": "src/"
+		}
+	}	
+}
