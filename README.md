@@ -70,4 +70,6 @@ komutunu da kullanabilirsiniz.
 
 
 
+Veriler http://postakodu.ptt.gov.tr/ adresinde yayınlanan veriler doğrultusunda 29.04.2016 itibarıyla günceldir.
+
 
