@@ -23,6 +23,6 @@ class CityDistrict extends Model
     protected $fillable = ['city_id','ilce','semt','mahalle','posta_kodu'];
 
     public function city() {
-        return $this->belongsTo('City');
+        return $this->belongsTo(City::class);
     }
 }

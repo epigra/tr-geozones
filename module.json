@@ -1,0 +1,14 @@
+{
+    "name": "TrGeoZones",
+    "alias": "trgeozones",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Epigra\\TrGeoZones\\Providers\\TrGeoZonesServiceProvider"
+    ],
+    "aliases": {},
+    "files": [],
+    "requires": []
+}

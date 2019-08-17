@@ -1,20 +1,38 @@
 {
-	"name": "epigra/trgeozones",
-	"description": "Türkiye İl İlçe Semt Muhit Mahalle ve Posta Kodları Laravel Paketi. Adds Turkish Geographical Zones Support to your project including Cities, Districts and Countries in Turkish",
-	"keywords": ["city","country", "district", "database", "il", "ilce", "veritabani", "turkish", "laravel"],
-	"license": "MIT",
-	"require": {
-		"epigra/pmgen": "dev-master"
-	},
-	"authors": [
-		{
-			"name": "Uğur Aydoğdu",
-			"email": "ugur.aydogdu@epigra.com"
-		}
-	],
-	"autoload": {
-		"psr-4": {
-			"Epigra\\TrGeoZones\\": "src/"
-		}
-	}	
+    "name": "epigra/trgeozones",
+    "description": "Türkiye İl İlçe Semt Muhit Mahalle ve Posta Kodları Laravel Paketi. Adds Turkish Geographical Zones Support to your project including Cities, Districts and Countries in Turkish",
+    "keywords": [
+        "city",
+        "country",
+        "district",
+        "database",
+        "il",
+        "ilce",
+        "veritabani",
+        "turkish",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Uğur Aydoğdu",
+            "email": "ugur.aydogdu@epigra.com"
+        }
+    ],
+    "require": {
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Epigra\\TrGeoZones\\Providers\\TrGeoZonesServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Epigra\\TrGeoZones\\": "src"
+        }
+    }
 }
