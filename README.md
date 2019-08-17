@@ -36,12 +36,11 @@ Laravel Nova kullanıcıları [dokümantasyonda](https://nova.laravel.com/docs/2
 `App/Providers/NovaServiceProvider` içerisindeki `resources()` methodunun üzerine yazarak veya AppServiceProvider içerisine aşağıdaki kod bloğunu gerekli şekilde ekleyerek
 
 ```
-
-    Nova::resources([
-        use \Epigra\TrGeoZones\Nova\City::class,
-        use \Epigra\TrGeoZones\Nova\CityDistrict::class,
-        use \Epigra\TrGeoZones\Nova\Country::class
-    ]);
+Nova::resources([
+	\Epigra\TrGeoZones\Nova\City::class,
+	\Epigra\TrGeoZones\Nova\CityDistrict::class,
+	\Epigra\TrGeoZones\Nova\Country::class
+]);
 
 ```
 resource'ları register edebilirler.
