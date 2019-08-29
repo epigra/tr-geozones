@@ -4,7 +4,7 @@
 
 `composer require epigra/trgeozones` diyerek paketi indirebilirsiniz.
 
-###Migrate
+### Migrate
 
 Kurulumu tamamladıktan sonra tabloları oluşturmak için
 
@@ -14,7 +14,7 @@ php artisan migrate
 
 demeniz gerekmektedir.
 
-###Seed
+### Seed
 Tüm tabloları seed etmek için sisteminizdeki DatabaseSeeder'da yer alan `run()` methodu içerisine
 
 ```
@@ -60,5 +60,8 @@ komutunu kullanarak excel importu gerçekleştirebilirsiniz.
 
 Excel Import komutu statik olarak public içerisinde yer alacak `trgeozones_update.xlsx` dosyasına bakacak şekilde çalışmaktadır..
 
+
+## SQL Dump
+Seeder kullanmadan SQL formatında dumpları indirmek için http://epigra.com/packages/tr_geozones_sql_dump.zip adresindeki arşivi kullanabilirsiniz.
 
 
