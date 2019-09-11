@@ -19,6 +19,7 @@ class TrGeoZonesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerTranslations();
+        $this->registerConfig();
         $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
         
     }
@@ -48,6 +49,21 @@ class TrGeoZonesServiceProvider extends ServiceProvider
         } else {
             $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'trgeozones');
         }
+    }
+
+     /**
+     * Register config.
+     *
+     * @return void
+     */
+    protected function registerConfig()
+    {
+        $this->publishes([
+            __DIR__.'/../Config/config.php' => config_path('trgeozones.php'),
+        ], 'config');
+        $this->mergeConfigFrom(
+            __DIR__.'/../Config/config.php', 'trgeozones'
+        );
     }
 
     /**

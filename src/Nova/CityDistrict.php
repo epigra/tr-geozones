@@ -51,7 +51,7 @@ class CityDistrict extends Resource
             Text::make('İlçe', 'ilce')->rules('required'),
             Text::make('Semt')->rules('required'),
             Text::make('Mahalle')->rules('required'),
-            Text::make('Posta Kodu')->rules('required', 'numeric'),
+            Text::make('Posta Kodu')->rules('required', 'numeric', 'max:'.config('trgeozones.max_values.zip_code')),
         ];
     }
 
