@@ -48,8 +48,16 @@ class Country extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Name')->sortable()->rules('required', 'max:255'),
-            Text::make('Iso Code')->sortable()->rules('required', 'max:2'),
+            Text::make('Name')->sortable()->rules('required', 'max:255')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 255
+                ]
+            ]),
+            Text::make('Iso Code')->sortable()->rules('required', 'max:2')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 2
+                ]
+            ]),
             HasMany::make('Cities', 'cities', 'Epigra\TrGeoZones\Nova\City')->sortable()
         ];
     }
