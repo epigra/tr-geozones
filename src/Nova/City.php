@@ -48,7 +48,11 @@ class City extends Resource
     {
         return [
             ID::make()->sortable(),
-            Text::make('Name')->sortable()->rules('required', 'max:255'),
+            Text::make('Name')->sortable()->rules('required', 'max:255')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 255
+                ]
+            ]),
             BelongsTo::make('Country', 'country', 'Epigra\TrGeoZones\Nova\Country')->sortable()->rules('required'),
             HasMany::make('District', 'districts', 'Epigra\TrGeoZones\Nova\CityDistrict')->sortable()
         ];

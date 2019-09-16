@@ -48,10 +48,26 @@ class CityDistrict extends Resource
         return [
             ID::make()->sortable(),
             BelongsTo::make('İl', 'city', 'Epigra\TrGeoZones\Nova\City')->sortable()->rules('required'),
-            Text::make('İlçe', 'ilce')->rules('required'),
-            Text::make('Semt')->rules('required'),
-            Text::make('Mahalle')->rules('required'),
-            Text::make('Posta Kodu')->rules('required|numeric '),
+            Text::make('İlçe', 'ilce')->rules('required', 'max:50')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 50
+                ]
+            ]),
+            Text::make('Semt')->rules('required', 'max:50')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 50
+                ]
+            ]),
+            Text::make('Mahalle')->rules('required', 'max:100')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 100
+                ]
+            ]),
+            Text::make('Posta Kodu')->rules('required', 'digits:5')->withMeta([
+                'extraAttributes' => [
+                    'maxLength' => 5
+                ]
+            ]),
         ];
     }
 

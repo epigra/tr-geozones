@@ -49,6 +49,7 @@ class TrGeoZonesServiceProvider extends ServiceProvider
             $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'trgeozones');
         }
     }
+    
 
     /**
      * Get the services provided by the provider.
