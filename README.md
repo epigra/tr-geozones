@@ -18,7 +18,7 @@ demeniz gerekmektedir.
 Tüm tabloları seed etmek için sisteminizdeki DatabaseSeeder'da yer alan `run()` methodu içerisine
 
 ```
-$this->call(Epigra\TrGeoZones\Database\Seeds\TRGeoZonesDatabaseSeeder::class);
+$this->call(Epigra\TrGeoZones\Database\Seeders\TrGeoZonesDatabaseSeeder::class);
 ```
 
 satırını ekleyerek tüm seederları çalıştırabilir; ayrı ayrı çalıştırmak isterseniz opsiyonel olarak aşağıdaki sınıfları kullanabilirsiniz.
