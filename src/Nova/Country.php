@@ -38,6 +38,10 @@ class Country extends Resource
         'id', 'name'
     ];
 
+    public static function label(){
+        return __('Countries');
+    }
+
     /**
      * Get the fields displayed by the resource.
      *
