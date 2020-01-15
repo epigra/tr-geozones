@@ -38,6 +38,10 @@ class City extends Resource
         'id', 'name'
     ];
 
+    public static function label(){
+        return __('Cities');
+    }
+
     /**
      * Get the fields displayed by the resource.
      *

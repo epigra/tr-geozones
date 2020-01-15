@@ -37,6 +37,10 @@ class CityDistrict extends Resource
         'id', 'name'
     ];
 
+    public static function label(){
+        return __('City Districts');
+    }
+
     /**
      * Get the fields displayed by the resource.
      *
