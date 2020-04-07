@@ -3,12 +3,10 @@
 namespace Epigra\TrGeoZones\Nova;
 
 use App\Nova\Resource;
-
 use Illuminate\Http\Request;
-
+use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Fields\ID;
 use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\BelongsTo;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class CityDistrict extends Resource
@@ -34,10 +32,11 @@ class CityDistrict extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name'
+        'id', 'name',
     ];
 
-    public static function label(){
+    public static function label()
+    {
         return __('City Districts');
     }
 
@@ -54,23 +53,23 @@ class CityDistrict extends Resource
             BelongsTo::make('İl', 'city', 'Epigra\TrGeoZones\Nova\City')->sortable()->rules('required'),
             Text::make('İlçe', 'ilce')->rules('required', 'max:50')->withMeta([
                 'extraAttributes' => [
-                    'maxLength' => 50
-                ]
+                    'maxLength' => 50,
+                ],
             ]),
             Text::make('Semt')->rules('required', 'max:50')->withMeta([
                 'extraAttributes' => [
-                    'maxLength' => 50
-                ]
+                    'maxLength' => 50,
+                ],
             ]),
             Text::make('Mahalle')->rules('required', 'max:100')->withMeta([
                 'extraAttributes' => [
-                    'maxLength' => 100
-                ]
+                    'maxLength' => 100,
+                ],
             ]),
             Text::make('Posta Kodu')->rules('required', 'digits:5')->withMeta([
                 'extraAttributes' => [
-                    'maxLength' => 5
-                ]
+                    'maxLength' => 5,
+                ],
             ]),
         ];
     }

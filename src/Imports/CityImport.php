@@ -2,14 +2,14 @@
 
 namespace Epigra\TrGeoZones\Imports;
 
-use Epigra\TRStringHelper;
 use Epigra\TrGeoZones\Models\City;
 use Epigra\TrGeoZones\Models\CityDistrict;
+use Epigra\TRStringHelper;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
-use Maatwebsite\Excel\Concerns\WithStartRow;
-use Maatwebsite\Excel\Concerns\WithProgressBar;
 use Maatwebsite\Excel\Concerns\WithChunkReading;
+use Maatwebsite\Excel\Concerns\WithProgressBar;
+use Maatwebsite\Excel\Concerns\WithStartRow;
 
 class CityImport implements ToModel, WithStartRow, WithChunkReading, WithProgressBar
 {
@@ -31,7 +31,7 @@ class CityImport implements ToModel, WithStartRow, WithChunkReading, WithProgres
                 'name' => $row[0],
                 'country_id' => 1,
             ]);
-        } 
+        }
 
         $district = CityDistrict::firstOrNew([
             'city_id' => $city->id,
@@ -41,7 +41,7 @@ class CityImport implements ToModel, WithStartRow, WithChunkReading, WithProgres
             'posta_kodu' => $row[4],
         ]);
 
-        if (!$district->exists) {
+        if (! $district->exists) {
             $district->save();
         }
 

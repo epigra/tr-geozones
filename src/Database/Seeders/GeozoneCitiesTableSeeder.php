@@ -13,412 +13,412 @@ class GeozoneCitiesTableSeeder extends Seeder
     {
         \DB::table('geozone_cities')->delete();
 
-        \DB::table('geozone_cities')->insert(array(
-            0 => array(
+        \DB::table('geozone_cities')->insert([
+            0 => [
                 'country_id' => 1,
                 'id' => 1,
                 'name' => 'Adana',
-            ),
-            1 => array(
+            ],
+            1 => [
                 'country_id' => 1,
                 'id' => 2,
                 'name' => 'Adıyaman',
-            ),
-            2 => array(
+            ],
+            2 => [
                 'country_id' => 1,
                 'id' => 3,
                 'name' => 'Afyonkarahisar',
-            ),
-            3 => array(
+            ],
+            3 => [
                 'country_id' => 1,
                 'id' => 4,
                 'name' => 'Ağrı',
-            ),
-            4 => array(
+            ],
+            4 => [
                 'country_id' => 1,
                 'id' => 5,
                 'name' => 'Amasya',
-            ),
-            5 => array(
+            ],
+            5 => [
                 'country_id' => 1,
                 'id' => 6,
                 'name' => 'Ankara',
-            ),
-            6 => array(
+            ],
+            6 => [
                 'country_id' => 1,
                 'id' => 7,
                 'name' => 'Antalya',
-            ),
-            7 => array(
+            ],
+            7 => [
                 'country_id' => 1,
                 'id' => 8,
                 'name' => 'Artvin',
-            ),
-            8 => array(
+            ],
+            8 => [
                 'country_id' => 1,
                 'id' => 9,
                 'name' => 'Aydın',
-            ),
-            9 => array(
+            ],
+            9 => [
                 'country_id' => 1,
                 'id' => 10,
                 'name' => 'Balıkesir',
-            ),
-            10 => array(
+            ],
+            10 => [
                 'country_id' => 1,
                 'id' => 11,
                 'name' => 'Bilecik',
-            ),
-            11 => array(
+            ],
+            11 => [
                 'country_id' => 1,
                 'id' => 12,
                 'name' => 'Bingöl',
-            ),
-            12 => array(
+            ],
+            12 => [
                 'country_id' => 1,
                 'id' => 13,
                 'name' => 'Bitlis',
-            ),
-            13 => array(
+            ],
+            13 => [
                 'country_id' => 1,
                 'id' => 14,
                 'name' => 'Bolu',
-            ),
-            14 => array(
+            ],
+            14 => [
                 'country_id' => 1,
                 'id' => 15,
                 'name' => 'Burdur',
-            ),
-            15 => array(
+            ],
+            15 => [
                 'country_id' => 1,
                 'id' => 16,
                 'name' => 'Bursa',
-            ),
-            16 => array(
+            ],
+            16 => [
                 'country_id' => 1,
                 'id' => 17,
                 'name' => 'Çanakkale',
-            ),
-            17 => array(
+            ],
+            17 => [
                 'country_id' => 1,
                 'id' => 18,
                 'name' => 'Çankırı',
-            ),
-            18 => array(
+            ],
+            18 => [
                 'country_id' => 1,
                 'id' => 19,
                 'name' => 'Çorum',
-            ),
-            19 => array(
+            ],
+            19 => [
                 'country_id' => 1,
                 'id' => 20,
                 'name' => 'Denizli',
-            ),
-            20 => array(
+            ],
+            20 => [
                 'country_id' => 1,
                 'id' => 21,
                 'name' => 'Diyarbakır',
-            ),
-            21 => array(
+            ],
+            21 => [
                 'country_id' => 1,
                 'id' => 22,
                 'name' => 'Edirne',
-            ),
-            22 => array(
+            ],
+            22 => [
                 'country_id' => 1,
                 'id' => 23,
                 'name' => 'Elazığ',
-            ),
-            23 => array(
+            ],
+            23 => [
                 'country_id' => 1,
                 'id' => 24,
                 'name' => 'Erzincan',
-            ),
-            24 => array(
+            ],
+            24 => [
                 'country_id' => 1,
                 'id' => 25,
                 'name' => 'Erzurum',
-            ),
-            25 => array(
+            ],
+            25 => [
                 'country_id' => 1,
                 'id' => 26,
                 'name' => 'Eskişehir',
-            ),
-            26 => array(
+            ],
+            26 => [
                 'country_id' => 1,
                 'id' => 27,
                 'name' => 'Gaziantep',
-            ),
-            27 => array(
+            ],
+            27 => [
                 'country_id' => 1,
                 'id' => 28,
                 'name' => 'Giresun',
-            ),
-            28 => array(
+            ],
+            28 => [
                 'country_id' => 1,
                 'id' => 29,
                 'name' => 'Gümüşhane',
-            ),
-            29 => array(
+            ],
+            29 => [
                 'country_id' => 1,
                 'id' => 30,
                 'name' => 'Hakkari',
-            ),
-            30 => array(
+            ],
+            30 => [
                 'country_id' => 1,
                 'id' => 31,
                 'name' => 'Hatay',
-            ),
-            31 => array(
+            ],
+            31 => [
                 'country_id' => 1,
                 'id' => 32,
                 'name' => 'Isparta',
-            ),
-            32 => array(
+            ],
+            32 => [
                 'country_id' => 1,
                 'id' => 33,
                 'name' => 'Mersin',
-            ),
-            33 => array(
+            ],
+            33 => [
                 'country_id' => 1,
                 'id' => 34,
                 'name' => 'İstanbul',
-            ),
-            34 => array(
+            ],
+            34 => [
                 'country_id' => 1,
                 'id' => 35,
                 'name' => 'İzmir',
-            ),
-            35 => array(
+            ],
+            35 => [
                 'country_id' => 1,
                 'id' => 36,
                 'name' => 'Kars',
-            ),
-            36 => array(
+            ],
+            36 => [
                 'country_id' => 1,
                 'id' => 37,
                 'name' => 'Kastamonu',
-            ),
-            37 => array(
+            ],
+            37 => [
                 'country_id' => 1,
                 'id' => 38,
                 'name' => 'Kayseri',
-            ),
-            38 => array(
+            ],
+            38 => [
                 'country_id' => 1,
                 'id' => 39,
                 'name' => 'Kırklareli',
-            ),
-            39 => array(
+            ],
+            39 => [
                 'country_id' => 1,
                 'id' => 40,
                 'name' => 'Kırşehir',
-            ),
-            40 => array(
+            ],
+            40 => [
                 'country_id' => 1,
                 'id' => 41,
                 'name' => 'Kocaeli',
-            ),
-            41 => array(
+            ],
+            41 => [
                 'country_id' => 1,
                 'id' => 42,
                 'name' => 'Konya',
-            ),
-            42 => array(
+            ],
+            42 => [
                 'country_id' => 1,
                 'id' => 43,
                 'name' => 'Kütahya',
-            ),
-            43 => array(
+            ],
+            43 => [
                 'country_id' => 1,
                 'id' => 44,
                 'name' => 'Malatya',
-            ),
-            44 => array(
+            ],
+            44 => [
                 'country_id' => 1,
                 'id' => 45,
                 'name' => 'Manisa',
-            ),
-            45 => array(
+            ],
+            45 => [
                 'country_id' => 1,
                 'id' => 46,
                 'name' => 'Kahramanmaraş',
-            ),
-            46 => array(
+            ],
+            46 => [
                 'country_id' => 1,
                 'id' => 47,
                 'name' => 'Mardin',
-            ),
-            47 => array(
+            ],
+            47 => [
                 'country_id' => 1,
                 'id' => 48,
                 'name' => 'Muğla',
-            ),
-            48 => array(
+            ],
+            48 => [
                 'country_id' => 1,
                 'id' => 49,
                 'name' => 'Muş',
-            ),
-            49 => array(
+            ],
+            49 => [
                 'country_id' => 1,
                 'id' => 50,
                 'name' => 'Nevşehir',
-            ),
-            50 => array(
+            ],
+            50 => [
                 'country_id' => 1,
                 'id' => 51,
                 'name' => 'Niğde',
-            ),
-            51 => array(
+            ],
+            51 => [
                 'country_id' => 1,
                 'id' => 52,
                 'name' => 'Ordu',
-            ),
-            52 => array(
+            ],
+            52 => [
                 'country_id' => 1,
                 'id' => 53,
                 'name' => 'Rize',
-            ),
-            53 => array(
+            ],
+            53 => [
                 'country_id' => 1,
                 'id' => 54,
                 'name' => 'Sakarya',
-            ),
-            54 => array(
+            ],
+            54 => [
                 'country_id' => 1,
                 'id' => 55,
                 'name' => 'Samsun',
-            ),
-            55 => array(
+            ],
+            55 => [
                 'country_id' => 1,
                 'id' => 56,
                 'name' => 'Siirt',
-            ),
-            56 => array(
+            ],
+            56 => [
                 'country_id' => 1,
                 'id' => 57,
                 'name' => 'Sinop',
-            ),
-            57 => array(
+            ],
+            57 => [
                 'country_id' => 1,
                 'id' => 58,
                 'name' => 'Sivas',
-            ),
-            58 => array(
+            ],
+            58 => [
                 'country_id' => 1,
                 'id' => 59,
                 'name' => 'Tekirdağ',
-            ),
-            59 => array(
+            ],
+            59 => [
                 'country_id' => 1,
                 'id' => 60,
                 'name' => 'Tokat',
-            ),
-            60 => array(
+            ],
+            60 => [
                 'country_id' => 1,
                 'id' => 61,
                 'name' => 'Trabzon',
-            ),
-            61 => array(
+            ],
+            61 => [
                 'country_id' => 1,
                 'id' => 62,
                 'name' => 'Tunceli',
-            ),
-            62 => array(
+            ],
+            62 => [
                 'country_id' => 1,
                 'id' => 63,
                 'name' => 'Şanlıurfa',
-            ),
-            63 => array(
+            ],
+            63 => [
                 'country_id' => 1,
                 'id' => 64,
                 'name' => 'Uşak',
-            ),
-            64 => array(
+            ],
+            64 => [
                 'country_id' => 1,
                 'id' => 65,
                 'name' => 'Van',
-            ),
-            65 => array(
+            ],
+            65 => [
                 'country_id' => 1,
                 'id' => 66,
                 'name' => 'Yozgat',
-            ),
-            66 => array(
+            ],
+            66 => [
                 'country_id' => 1,
                 'id' => 67,
                 'name' => 'Zonguldak',
-            ),
-            67 => array(
+            ],
+            67 => [
                 'country_id' => 1,
                 'id' => 68,
                 'name' => 'Aksaray',
-            ),
-            68 => array(
+            ],
+            68 => [
                 'country_id' => 1,
                 'id' => 69,
                 'name' => 'Bayburt',
-            ),
-            69 => array(
+            ],
+            69 => [
                 'country_id' => 1,
                 'id' => 70,
                 'name' => 'Karaman',
-            ),
-            70 => array(
+            ],
+            70 => [
                 'country_id' => 1,
                 'id' => 71,
                 'name' => 'Kırıkkale',
-            ),
-            71 => array(
+            ],
+            71 => [
                 'country_id' => 1,
                 'id' => 72,
                 'name' => 'Batman',
-            ),
-            72 => array(
+            ],
+            72 => [
                 'country_id' => 1,
                 'id' => 73,
                 'name' => 'Şırnak',
-            ),
-            73 => array(
+            ],
+            73 => [
                 'country_id' => 1,
                 'id' => 74,
                 'name' => 'Bartın',
-            ),
-            74 => array(
+            ],
+            74 => [
                 'country_id' => 1,
                 'id' => 75,
                 'name' => 'Ardahan',
-            ),
-            75 => array(
+            ],
+            75 => [
                 'country_id' => 1,
                 'id' => 76,
                 'name' => 'Iğdır',
-            ),
-            76 => array(
+            ],
+            76 => [
                 'country_id' => 1,
                 'id' => 77,
                 'name' => 'Yalova',
-            ),
-            77 => array(
+            ],
+            77 => [
                 'country_id' => 1,
                 'id' => 78,
                 'name' => 'Karabük',
-            ),
-            78 => array(
+            ],
+            78 => [
                 'country_id' => 1,
                 'id' => 79,
                 'name' => 'Kilis',
-            ),
-            79 => array(
+            ],
+            79 => [
                 'country_id' => 1,
                 'id' => 80,
                 'name' => 'Osmaniye',
-            ),
-            80 => array(
+            ],
+            80 => [
                 'country_id' => 1,
                 'id' => 81,
                 'name' => 'Düzce',
-            ),
-        ));
+            ],
+        ]);
     }
 }

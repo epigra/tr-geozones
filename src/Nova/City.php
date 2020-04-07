@@ -3,13 +3,11 @@
 namespace Epigra\TrGeoZones\Nova;
 
 use App\Nova\Resource;
-
-use Laravel\Nova\Fields\ID;
-
 use Illuminate\Http\Request;
-use Laravel\Nova\Fields\Text;
-use Laravel\Nova\Fields\HasMany;
 use Laravel\Nova\Fields\BelongsTo;
+use Laravel\Nova\Fields\HasMany;
+use Laravel\Nova\Fields\ID;
+use Laravel\Nova\Fields\Text;
 use Laravel\Nova\Http\Requests\NovaRequest;
 
 class City extends Resource
@@ -35,10 +33,11 @@ class City extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name'
+        'id', 'name',
     ];
 
-    public static function label(){
+    public static function label()
+    {
         return __('Cities');
     }
 
@@ -54,11 +53,11 @@ class City extends Resource
             ID::make()->sortable(),
             Text::make('Name')->sortable()->rules('required', 'max:255')->withMeta([
                 'extraAttributes' => [
-                    'maxLength' => 255
-                ]
+                    'maxLength' => 255,
+                ],
             ]),
             BelongsTo::make('Country', 'country', 'Epigra\TrGeoZones\Nova\Country')->sortable()->rules('required'),
-            HasMany::make('District', 'districts', 'Epigra\TrGeoZones\Nova\CityDistrict')->sortable()
+            HasMany::make('District', 'districts', 'Epigra\TrGeoZones\Nova\CityDistrict')->sortable(),
         ];
     }
 

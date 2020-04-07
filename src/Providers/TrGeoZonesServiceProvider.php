@@ -5,8 +5,8 @@ namespace Epigra\TrGeoZones\Providers;
 use Epigra\TrGeoZones\Nova\City;
 use Epigra\TrGeoZones\Nova\CityDistrict;
 use Epigra\TrGeoZones\Nova\Country;
-use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Illuminate\Support\ServiceProvider;
 use Laravel\Nova\Nova;
 
 class TrGeoZonesServiceProvider extends ServiceProvider
@@ -19,8 +19,7 @@ class TrGeoZonesServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->registerTranslations();
-        $this->loadMigrationsFrom(__DIR__ . '/../Database/Migrations');
-        
+        $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
     }
 
     /**
@@ -30,10 +29,8 @@ class TrGeoZonesServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
     }
 
-    
     /**
      * Register translations.
      *
@@ -46,10 +43,9 @@ class TrGeoZonesServiceProvider extends ServiceProvider
         if (is_dir($langPath)) {
             $this->loadTranslationsFrom($langPath, 'trgeozones');
         } else {
-            $this->loadTranslationsFrom(__DIR__ .'/../Resources/lang', 'trgeozones');
+            $this->loadTranslationsFrom(__DIR__.'/../Resources/lang', 'trgeozones');
         }
     }
-    
 
     /**
      * Get the services provided by the provider.

@@ -2,8 +2,8 @@
 
 namespace Epigra\TrGeoZones\Console;
 
-use Illuminate\Console\Command;
 use Epigra\TrGeoZones\Imports\CityImport;
+use Illuminate\Console\Command;
 
 class ExcelMigrator extends Command
 {

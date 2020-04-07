@@ -20,9 +20,10 @@ class CityDistrict extends Model
      *
      * @var array
      */
-    protected $fillable = ['city_id','ilce','semt','mahalle','posta_kodu'];
+    protected $fillable = ['city_id', 'ilce', 'semt', 'mahalle', 'posta_kodu'];
 
-    public function city() {
+    public function city()
+    {
         return $this->belongsTo(City::class);
     }
 }

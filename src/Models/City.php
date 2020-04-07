@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class City extends Model
 {
     public $timestamps = false;
-    
+
     /**
      * The database table used by the model.
      *
@@ -27,8 +27,8 @@ class City extends Model
         return $this->belongsTo(Country::class);
     }
 
-
-    public function districts() {
+    public function districts()
+    {
         return $this->hasMany(CityDistrict::class);
     }
 }
