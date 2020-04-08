@@ -4,35 +4,33 @@
     "keywords": [
         "city",
         "country",
-        "district",
         "database",
+        "district",
         "il",
         "ilce",
-        "veritabani",
+        "laravel",
         "turkish",
-        "laravel"
+        "veritabani"
     ],
+    "license": "proprietary",
     "authors": [
         {
             "name": "Uğur Aydoğdu",
             "email": "ugur.aydogdu@epigra.com"
         }
     ],
-    "require": {
+    "require": [],
+    "autoload": {
+        "psr-4": {
+            "Epigra\\TrGeoZones\\": "src/"
+        }
     },
     "extra": {
         "laravel": {
             "providers": [
                 "Epigra\\TrGeoZones\\Providers\\TrGeoZonesServiceProvider"
             ],
-            "aliases": {
-                
-            }
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Epigra\\TrGeoZones\\": "src"
+            "aliases": []
         }
     }
 }
