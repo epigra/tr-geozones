@@ -65,3 +65,7 @@ Excel Import komutu statik olarak public içerisinde yer alacak `trgeozones_upda
 Seeder kullanmadan SQL formatında dumpları indirmek için http://epigra.com/packages/tr_geozones_sql_dump.zip adresindeki arşivi kullanabilirsiniz.
 
 
+## Bayrak görselleri
+
+Bu görselleri ekleyebilmek için [spatie/laravel-medialibrary](https://docs.spatie.be/laravel-medialibrary/v8/installation-setup/) paketinin kurulumunu gerçekleştirmelisiniz.
+

@@ -19,7 +19,9 @@
             "email": "ugur.aydogdu@epigra.com"
         }
     ],
-    "require": [],
+    "require": {
+        "spatie/laravel-medialibrary": "^8.0"
+    },
     "autoload": {
         "psr-4": {
             "Epigra\\TrGeoZones\\": "src/"
