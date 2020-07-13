@@ -4,17 +4,18 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCountriesTable extends Migration
+class CreateGeozoneCitiesTable extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up()
     {
-        Schema::create('geozone_countries', function (Blueprint $table) {
+        Schema::create('geozone_cities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('iso_code', 2)->unique();
             $table->string('name');
+            $table->bigInteger('country_id')->unsigned();
+            $table->foreign('country_id')->references('id')->on('geozone_countries')->onDelete('cascade');
         });
     }
 
@@ -23,6 +24,6 @@ class CreateCountriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('countries');
+        Schema::dropIfExists('cities');
     }
 }
