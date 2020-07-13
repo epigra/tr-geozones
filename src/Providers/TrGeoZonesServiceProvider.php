@@ -22,6 +22,10 @@ class TrGeoZonesServiceProvider extends ServiceProvider
     {
         $this->registerTranslations();
         $this->loadMigrationsFrom(__DIR__.'/../Database/Migrations');
+
+        $this->publishes([
+            __DIR__.'/../Database/Migrations/' => database_path('migrations'),
+        ], 'trgeozone-migrations');
     }
 
     /**
