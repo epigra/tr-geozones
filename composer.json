@@ -27,9 +27,7 @@
     },
     "extra": {
         "laravel": {
-            "providers": [
-                "Epigra\\TrGeoZones\\Providers\\TrGeoZonesServiceProvider"
-            ],
+            "providers": [],
             "aliases": []
         }
     }
