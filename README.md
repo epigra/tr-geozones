@@ -46,7 +46,7 @@ Nova::resources([
 resource'ları register edebilirler.
 
 
-##Veri Güncelliği
+## Veri Güncelliği
 
 Veriler http://postakodu.ptt.gov.tr/ adresinde yayınlanan veriler doğrultusunda 17.08.2019 itibarıyla günceldir.
 
