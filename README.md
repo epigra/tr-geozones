@@ -48,7 +48,7 @@ resource'ları register edebilirler.
 
 ## Veri Güncelliği
 
-Veriler http://postakodu.ptt.gov.tr/ adresinde yayınlanan veriler doğrultusunda 17.08.2019 itibarıyla günceldir.
+Veriler http://postakodu.ptt.gov.tr/ adresinde yayınlanan veriler doğrultusunda 28.09.2020 itibarıyla günceldir.
 
 İndirdiğiniz excel tablosu üzerinden güncelleme yapmak isterseniz öncesinde `composer require maatwebsite/excel epigra/trstringhelper` komutunu çalıştırarak gerekli paketleri kurduğunuzdan ve Kernel içerisine `\Epigra\TrGeoZones\Console\ExcelMigrator::class` eklediğinizden emin olduktan sonra 
 
@@ -62,6 +62,6 @@ Excel Import komutu statik olarak public içerisinde yer alacak `trgeozones_upda
 
 
 ## SQL Dump
-Seeder kullanmadan SQL formatında dumpları indirmek için http://epigra.com/packages/tr_geozones_sql_dump.zip adresindeki arşivi kullanabilirsiniz.
+Seeder kullanmadan SQL formatında dumpları indirmek için http://epigra.com/packages/tr_geozones_sql_dump-2020-09-28.zip adresindeki arşivi kullanabilirsiniz.
 
 
