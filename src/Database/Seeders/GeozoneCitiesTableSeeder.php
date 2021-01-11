@@ -3,6 +3,8 @@
 namespace Epigra\TrGeoZones\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+
 
 class GeozoneCitiesTableSeeder extends Seeder
 {
@@ -11,9 +13,9 @@ class GeozoneCitiesTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('geozone_cities')->delete();
+        DB::table('geozone_cities')->delete();
 
-        \DB::table('geozone_cities')->insert([
+        DB::table('geozone_cities')->insert([
             0 => [
                 'country_id' => 1,
                 'id' => 1,

@@ -29,6 +29,6 @@ class CreateGeozoneCityDistrictsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('city_districts');
+        Schema::dropIfExists('geozone_city_districts');
     }
 }

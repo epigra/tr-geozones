@@ -3,6 +3,7 @@
 namespace Epigra\TrGeoZones\Database\Seeders;
 
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 
 class GeozoneCountriesTableSeeder extends Seeder
 {
@@ -11,9 +12,9 @@ class GeozoneCountriesTableSeeder extends Seeder
      */
     public function run()
     {
-        \DB::table('geozone_countries')->delete();
+        DB::table('geozone_countries')->delete();
 
-        \DB::table('geozone_countries')->insert([
+        DB::table('geozone_countries')->insert([
             0 => [
                 'id' => 1,
                 'iso_code' => 'TR',
