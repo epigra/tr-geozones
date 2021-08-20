@@ -24,7 +24,7 @@ class CityDistrict extends Resource
      *
      * @var string
      */
-    public static $title = 'name';
+    public static $title = 'ilce';
 
     /**
      * The columns that should be searched.
@@ -32,7 +32,7 @@ class CityDistrict extends Resource
      * @var array
      */
     public static $search = [
-        'id', 'name',
+        'id', 'ilce',
     ];
 
     public static function label()
