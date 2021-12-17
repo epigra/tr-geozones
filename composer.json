@@ -19,7 +19,6 @@
             "email": "ugur.aydogdu@epigra.com"
         }
     ],
-    "require": [],
     "autoload": {
         "psr-4": {
             "Epigra\\TrGeoZones\\": "src/"
