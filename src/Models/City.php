@@ -2,10 +2,14 @@
 
 namespace Epigra\TrGeoZones\Models;
 
+use Epigra\TrGeoZones\Database\Factories\CityFactory;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 class City extends Model
 {
+    use HasFactory;
+
     public $timestamps = false;
 
     /**
@@ -30,5 +34,10 @@ class City extends Model
     public function districts()
     {
         return $this->hasMany(CityDistrict::class);
+    }
+
+    public static function newFactory()
+    {
+        return CityFactory::new();
     }
 }
