@@ -4,22 +4,17 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateGeozoneCityDistrictsTable extends Migration
+class CreateGeozoneCountiesTable extends Migration
 {
     /**
      * Run the migrations.
      */
     public function up()
     {
-        Schema::create('geozone_city_districts', function (Blueprint $table) {
+        Schema::create('geozone_counties', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->string('name');
             $table->bigInteger('city_id')->unsigned();
-            $table->string('ilce', 50);
-            $table->string('semt', 50);
-            $table->string('mahalle', 100);
-            $table->string('posta_kodu', 5);
-
-            $table->unique(['city_id', 'ilce', 'semt', 'mahalle', 'posta_kodu'], 'geozone_key');
             $table->foreign('city_id')->references('id')->on('geozone_cities')->onDelete('cascade');
         });
     }
@@ -29,6 +24,6 @@ class CreateGeozoneCityDistrictsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('geozone_city_districts');
+        Schema::dropIfExists('geozone_cities');
     }
 }

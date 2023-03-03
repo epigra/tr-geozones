@@ -4,7 +4,7 @@ namespace Epigra\TrGeoZones\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class CityDistrict extends Model
+class County extends Model
 {
     public $timestamps = false;
 
@@ -13,17 +13,22 @@ class CityDistrict extends Model
      *
      * @var string
      */
-    protected $table = 'geozone_city_districts';
+    protected $table = 'geozone_counties';
 
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
-    protected $fillable = ['city_id', 'ilce', 'semt', 'mahalle', 'posta_kodu'];
+    protected $fillable = ['name', 'city_id'];
 
     public function city()
     {
         return $this->belongsTo(City::class);
+    }
+
+    public function districts()
+    {
+        return $this->hasMany(District::class);
     }
 }
