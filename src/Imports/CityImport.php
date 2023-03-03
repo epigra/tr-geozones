@@ -3,7 +3,9 @@
 namespace Epigra\TrGeoZones\Imports;
 
 use Epigra\TrGeoZones\Models\City;
-use Epigra\TrGeoZones\Models\CityDistrict;
+use Epigra\TrGeoZones\Models\County;
+use Epigra\TrGeoZones\Models\District;
+use Epigra\TrGeoZones\Models\Neighbourhood;
 use Epigra\TRStringHelper;
 use Maatwebsite\Excel\Concerns\Importable;
 use Maatwebsite\Excel\Concerns\ToModel;
@@ -24,28 +26,26 @@ class CityImport implements ToModel, WithStartRow, WithChunkReading, WithProgres
         $row[3] = rtrim($stringHelper->withString($row[3])->toLower()->ucWords()->result());
         $row[4] = rtrim($row[4]);
 
-        $city = City::where('country_id', 1)->where('name', $row[0])->first();
-
-        if (empty($city)) {
-            $city = City::create([
-                'name' => $row[0],
-                'country_id' => 1,
-            ]);
-        }
-
-        $district = CityDistrict::firstOrNew([
-            'city_id' => $city->id,
-            'ilce' => $row[1],
-            'semt' => $row[2],
-            'mahalle' => $row[3],
-            'posta_kodu' => $row[4],
+        $city = City::firstOrCreate([
+            'name' => $row[0],
+            'country_id' => 1,
         ]);
 
-        if (! $district->exists) {
-            $district->save();
-        }
+        $county = County::firstOrCreate([
+            'name' => $row[1],
+            'city_id' => $city->id,
+        ]);
 
-        return $district;
+        $district = District::firstOrCreate([
+            'name' => $row[2],
+            'county_id' => $county->id,
+        ]);
+
+        return Neighbourhood::firstOrCreate([
+            'name' => $row[3],
+            'district_id' => $district->id,
+            'post_code' => $row[4],
+        ]);
     }
 
     public function startRow(): int
