@@ -13,8 +13,9 @@ class CreateGeozoneDistrictsTable extends Migration
     {
         Schema::create('geozone_districts', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
             $table->bigInteger('county_id')->unsigned();
+            $table->string('name');
+
             $table->foreign('county_id')->references('id')->on('geozone_counties')->onDelete('cascade');
         });
     }

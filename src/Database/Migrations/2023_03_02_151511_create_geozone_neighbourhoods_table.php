@@ -13,9 +13,10 @@ class CreateGeozoneNeighbourhoodsTable extends Migration
     {
         Schema::create('geozone_neighbourhoods', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->bigInteger('district_id')->unsigned();
             $table->string('name');
             $table->string('post_code');
-            $table->bigInteger('district_id')->unsigned();
+
             $table->foreign('district_id')->references('id')->on('geozone_districts')->onDelete('cascade');
         });
     }
