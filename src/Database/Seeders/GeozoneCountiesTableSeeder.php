@@ -983,14 +983,14 @@ class GeozoneCountiesTableSeeder extends Seeder
             ['id' => 987, 'name' => 'Şefaatli̇', 'city_id' => 81],
             ['id' => 988, 'name' => 'Yeni̇fakılı', 'city_id' => 81],
             ['id' => 989, 'name' => 'Yerköy', 'city_id' => 81],
-            ['id' => 990, 'name' => 'Alaplı', 'city_id' => 82],
-            ['id' => 991, 'name' => 'Çaycuma', 'city_id' => 82],
-            ['id' => 992, 'name' => 'Devrek', 'city_id' => 82],
-            ['id' => 993, 'name' => 'Ereğli̇', 'city_id' => 82],
-            ['id' => 994, 'name' => 'Gökçebey', 'city_id' => 82],
-            ['id' => 995, 'name' => 'Ki̇li̇mli̇', 'city_id' => 82],
-            ['id' => 996, 'name' => 'Kozlu', 'city_id' => 82],
-            ['id' => 997, 'name' => 'Merkez', 'city_id' => 82],
+            ['id' => 990, 'name' => 'Alaplı', 'city_id' => 81],
+            ['id' => 991, 'name' => 'Çaycuma', 'city_id' => 81],
+            ['id' => 992, 'name' => 'Devrek', 'city_id' => 81],
+            ['id' => 993, 'name' => 'Ereğli̇', 'city_id' => 81],
+            ['id' => 994, 'name' => 'Gökçebey', 'city_id' => 81],
+            ['id' => 995, 'name' => 'Ki̇li̇mli̇', 'city_id' => 81],
+            ['id' => 996, 'name' => 'Kozlu', 'city_id' => 81],
+            ['id' => 997, 'name' => 'Merkez', 'city_id' => 81],
         ]);
     }
 }
