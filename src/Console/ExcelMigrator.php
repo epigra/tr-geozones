@@ -38,8 +38,17 @@ class ExcelMigrator extends Command
     {
         ini_set('memory_limit', '-1');
 
-        (new CityImport())->withOutput($this->output)->import(public_path('trgeozones_update.xlsx'));
+        $excelPath = storage_path('trgeozones_update.xlsx');
 
-        $this->line('İçe aktarım tamamlandı.');
+        if(file_exists($excelPath)) {
+            (new CityImport())->withOutput($this->output)->import($excelPath);
+            $this->line('İçe aktarım tamamlandı.');
+
+            return Command::SUCCESS;
+        }else{
+            $this->error('Excel dosyası bulunamadı.');
+
+            return Command::FAILURE;
+        }
     }
 }

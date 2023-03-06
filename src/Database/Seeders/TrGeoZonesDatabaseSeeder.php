@@ -20,7 +20,9 @@ class TrGeoZonesDatabaseSeeder extends Seeder
 
         $this->call(GeozoneCountriesTableSeeder::class);
         $this->call(GeozoneCitiesTableSeeder::class);
-        $this->call(GeozoneCityDistrictsTableSeeder::class);
+        $this->call(GeozoneCountiesTableSeeder::class);
+        $this->call(GeozoneDistrictsTableSeeder::class);
+        $this->call(GeozoneNeighbourhoodsTableSeeder::class);
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
         // $this->call("OthersTableSeeder");

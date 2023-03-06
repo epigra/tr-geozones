@@ -13,8 +13,9 @@ class CreateGeozoneCitiesTable extends Migration
     {
         Schema::create('geozone_cities', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
             $table->bigInteger('country_id')->unsigned();
+            $table->string('name');
+
             $table->foreign('country_id')->references('id')->on('geozone_countries')->onDelete('cascade');
         });
     }
